@@ -41,8 +41,6 @@ body{
   animation: fade_img 5s;
   animation-delay: 6s;
   animation-fill-mode: forwards;
-
-
 }
 
 .bot{
@@ -50,21 +48,29 @@ body{
   animation: fade_img 5s;
   animation-delay: 7s;
   animation-fill-mode: forwards;
-
-
 }
 
 
-.two{
-  background: url(img/forest.jpg);
-  background-position: center;
-  background-size: cover;
-}
+
 .three{
   background-color: yellow;
 }
 
-section{
+section.one{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+section.two{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+}
+section.three{
   width: 100%;
   height: 100vh;
   display: flex;
@@ -76,6 +82,34 @@ section{
 p{
   font-size: 150px;
 }
+
+.wrap{
+  max-width: 100vw;
+  background-image: url("img/forest.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+
+}
+
+.bgdiv{
+  float: left;
+  width: 50%;
+  height: 100vh;
+}
+
+
+.twodiv{
+  float: right;
+  width: 50%;
+  height: 100vh;
+}
+
+#twoh4{
+  font-size: 24px;
+  margin: 10% 20% 10% 20%;
+}
+
+
 
 @keyframes fade{
   0%{
