@@ -14,8 +14,7 @@
     align-items: center;
 
 }
-.inner{
-}
+
 
 .thanks_1{
     margin: 5%;
@@ -27,15 +26,10 @@
     text-align: center;
 }
 
-
-h1{
-    font-size: 34pt;
+.loader_s{
+    display: flex;
+    justify-content: center;
 }
-h2{
-    font-size: 18pt;
-}
-
-
 
 .loader {
     border: 8px solid rgb(242, 109,14); 
@@ -45,6 +39,13 @@ h2{
     animation: spin 4s linear infinite;
 }
 
+
+h1{
+    font-size: 34pt;
+}
+h2{
+    font-size: 18pt;
+}
 
   
 @keyframes spin {
