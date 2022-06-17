@@ -2,6 +2,7 @@ body{
   margin: 0;
   font-family: 'Times New Roman', Times, serif;
   overflow: hidden;
+
 }
 
 .container{
@@ -95,8 +96,6 @@ body{
   animation-fill-mode: forwards;
 }
 
-.three{
-}
 
 section.one{
   width: 100%;
@@ -147,6 +146,15 @@ p{
   margin: 10% 20% 10% 20%;
 }
 
+
+.flower{
+  display: block;
+  margin: auto;
+  padding: 40px;
+  width: 40%;
+}
+
+
 .threewrap1{
   position: relative;
   width: 100%;
@@ -161,10 +169,11 @@ p{
 }
 
 .btndiv{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
+  margin-top: 5%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .btn2{
@@ -191,11 +200,9 @@ transform: translate(-50%,-50%);
   display: inline-block;
   width: 90px;
   height: 90px;
-  background:rgb(254, 199, 8);
   margin: 10px;
   border-radius: 30%;
-  box-shadow: 0 5px 15px -5px #00000070;
-  color: #ffffff;
+  color: rgb(254, 199, 8);
   overflow: hidden;
   position: relative;
 }
@@ -207,19 +214,8 @@ transform: translate(-50%,-50%);
 }
 
 .btn1:hover i{
-  transform: scale(1);
-  color: #000;
-}
-
-.btn1::before{
-  content:"";
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  background:rgb(242, 109,14);
-  transform: rotate(45deg);
-  left: -110%;
-  top: 90%;
+  transform: scale(2);
+  color: 254, 199, 8;
 }
 
 .btn1:hover::before{
