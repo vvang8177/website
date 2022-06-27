@@ -10,23 +10,46 @@
         <div class="overall">
             <div class="contact">
                 <div class="inside">
-                    <form action="https://formsubmit.co/dakogubo@maildim.com" method="POST">
+                    <form method="POST" action="https://formsubmit.co/xifevike@maildim.com" enctype="multipart/form-data">
                         <input type="text" class="input-filed" name="name" id="name" placeholder="Name" required><br>
                         <input type="email" class="input-filed" name="email" id="email" placeholder="Email" required><br>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone Number"
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number "
                         pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>                        
                         <input type="text" class="input-filed" name="subject" id="subject" placeholder="Subject" ><br>
                         <br>
                         <p>Please leave your message & availability</p>
                         <textarea type="text" class="input-filed" id="message" name="message" placeholder="Message" style="resize: none;" required></textarea>
                         <br>
+                        <p>Insert Image below</p>
+                        <input type="file" id="rfile" name="attachment" accept="image/png, image/jpeg" hidden="hidden">
+                        <button type="button" id="cbutton">Open</button><br>
+                        <span id="ctext">No File</span><br>
                         <button type="submit" id="btn">Send</button>
-                        <input type="hidden" name="_next" value="https://submit.html">
                         <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
                     </form>
                 </div>
             </div>
-        </div>    
+        </div>  
+        
+        <script type="text/javascript">
+            const r_btn = document.getElementById("rfile");
+            const c_btn = document.getElementById("cbutton");
+            const c_text = document.getElementById("ctext");
+            
+            c_btn.addEventListener("click", function(){
+                r_btn.click();
+            })
+
+            r_btn.addEventListener("change",function(){
+                if(r_btn.value){
+                    c_text.innerHTML=r_btn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+                }else{
+                    c_text.innerHTML="No File"
+                }
+            })
+        </script>
 	</body>
     
 </html>
